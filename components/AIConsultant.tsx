@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { generateBusinessAdvice } from '../services/geminiService';
+import { generateBusinessAdvice } from '../services/openaiService';
 
 const AIConsultant: React.FC = () => {
   const [challenge, setChallenge] = useState('');
@@ -46,11 +46,10 @@ const AIConsultant: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${
-                loading 
-                  ? 'bg-slate-700 text-slate-400 cursor-not-allowed' 
+              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${loading
+                  ? 'bg-slate-700 text-slate-400 cursor-not-allowed'
                   : 'bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-[1.01] active:scale-[0.99] text-white shadow-lg shadow-blue-500/20'
-              }`}
+                }`}
             >
               {loading ? (
                 <span className="flex items-center justify-center">
