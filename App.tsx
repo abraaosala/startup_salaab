@@ -48,9 +48,9 @@ const App: React.FC = () => {
           <div className="relative hidden lg:block">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
             <img 
-              src="https://picsum.photos/800/600?grayscale" 
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800" 
               alt="Salaab Tech" 
-              className="relative rounded-2xl shadow-2xl border border-slate-800"
+              className="relative rounded-2xl shadow-2xl border border-slate-800 object-cover h-[500px] w-full"
             />
           </div>
         </div>
@@ -126,21 +126,21 @@ const App: React.FC = () => {
           </div>
           <div className="order-1 lg:order-2">
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-slate-800 p-8 rounded-2xl text-center">
+              <div className="bg-slate-800 p-8 rounded-2xl text-center border border-slate-700">
                 <div className="text-4xl font-bold text-blue-500 mb-2">50+</div>
-                <div className="text-sm text-slate-400">Projetos Entregues</div>
+                <div className="text-sm text-slate-400">Projetos</div>
               </div>
-              <div className="bg-slate-800 p-8 rounded-2xl text-center">
+              <div className="bg-slate-800 p-8 rounded-2xl text-center border border-slate-700">
                 <div className="text-4xl font-bold text-purple-500 mb-2">15</div>
                 <div className="text-sm text-slate-400">Especialistas</div>
               </div>
-              <div className="bg-slate-800 p-8 rounded-2xl text-center">
+              <div className="bg-slate-800 p-8 rounded-2xl text-center border border-slate-700">
                 <div className="text-4xl font-bold text-emerald-500 mb-2">98%</div>
-                <div className="text-sm text-slate-400">Uptime Garantido</div>
+                <div className="text-sm text-slate-400">Uptime</div>
               </div>
-              <div className="bg-slate-800 p-8 rounded-2xl text-center">
+              <div className="bg-slate-800 p-8 rounded-2xl text-center border border-slate-700">
                 <div className="text-4xl font-bold text-orange-500 mb-2">24/7</div>
-                <div className="text-sm text-slate-400">Suporte Técnico</div>
+                <div className="text-sm text-slate-400">Suporte</div>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ const App: React.FC = () => {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white">S</div>
                 <span className="text-xl font-bold text-white">SALAAB</span>
               </div>
-              <p className="text-slate-400 max-sm mb-8">
+              <p className="text-slate-400 max-w-sm mb-8">
                 Inovando hoje para liderar amanhã. O parceiro ideal para escalar seu desenvolvimento tecnológico.
               </p>
               <div className="flex space-x-4">
