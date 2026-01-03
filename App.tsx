@@ -3,6 +3,20 @@ import React from 'react';
 import Header from './components/Header';
 import AIConsultant from './components/AIConsultant';
 
+const ServiceCard: React.FC<{ icon: string; title: string; desc: string }> = ({ icon, title, desc }) => (
+  <div className="p-8 glass rounded-2xl hover:bg-white/10 transition-all border border-slate-800 hover:border-blue-500/50 group">
+    <div className="text-4xl mb-4 group-hover:scale-110 transition-transform inline-block">{icon}</div>
+    <h3 className="text-xl font-bold mb-2">{title}</h3>
+    <p className="text-slate-400 leading-relaxed text-sm">{desc}</p>
+  </div>
+);
+
+const SocialIcon: React.FC<{ icon: string }> = ({ icon }) => (
+  <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-slate-300 hover:text-white">
+    <span className="text-xs font-bold">{icon[0]}</span>
+  </a>
+);
+
 const App: React.FC = () => {
   return (
     <div className="min-h-screen">
@@ -142,7 +156,7 @@ const App: React.FC = () => {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white">S</div>
                 <span className="text-xl font-bold text-white">SALAAB</span>
               </div>
-              <p className="text-slate-400 max-w-sm mb-8">
+              <p className="text-slate-400 max-sm mb-8">
                 Inovando hoje para liderar amanhã. O parceiro ideal para escalar seu desenvolvimento tecnológico.
               </p>
               <div className="flex space-x-4">
@@ -178,19 +192,5 @@ const App: React.FC = () => {
     </div>
   );
 };
-
-const ServiceCard: React.FC<{ icon: string; title: string; desc: string }> = ({ icon, title, desc }) => (
-  <div className="p-8 glass rounded-2xl hover:bg-white/10 transition-all border border-slate-800 hover:border-blue-500/50 group">
-    <div className="text-4xl mb-4 group-hover:scale-110 transition-transform inline-block">{icon}</div>
-    <h3 className="text-xl font-bold mb-2">{title}</h3>
-    <p className="text-slate-400 leading-relaxed text-sm">{desc}</p>
-  </div>
-);
-
-const SocialIcon: React.FC<{ icon: string }> = ({ icon }) => (
-  <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-slate-300 hover:text-white">
-    <span className="text-xs font-bold">{icon[0]}</span>
-  </a>
-);
 
 export default App;
